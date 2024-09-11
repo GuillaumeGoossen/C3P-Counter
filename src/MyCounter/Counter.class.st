@@ -28,26 +28,32 @@ Counter >> count: anInteger [
 	count := anInteger
 ]
 
-{ #category : 'accessing' }
+{ #category : 'operation' }
 Counter >> decrement [
 
 	count := count - 1
 ]
 
-{ #category : 'accessing' }
+{ #category : 'operation' }
 Counter >> decrement2 [
 
 	count := count - 2
 ]
 
-{ #category : 'accessing' }
+{ #category : 'operation' }
 Counter >> increment [
 
 	count := count + 1
 ]
 
-{ #category : 'accessing' }
+{ #category : 'operation' }
 Counter >> increment2 [
 
 	count := count + 2
+]
+
+{ #category : 'operation' }
+Counter >> initialize [ 
+	
+	count := 0
 ]
