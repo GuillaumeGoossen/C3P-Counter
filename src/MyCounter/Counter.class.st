@@ -65,6 +65,13 @@ Counter >> initialize [
 ]
 
 { #category : 'operation' }
+Counter >> printOn: aStream [
+
+	super printOn: aStream.
+	aStream nextPutAll: ' with value: ', count printString.
+]
+
+{ #category : 'operation' }
 Counter >> startingAt: anInteger [
 
 	^ self new count: anInteger
